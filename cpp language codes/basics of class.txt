@@ -1,0 +1,17 @@
+#include<iostream.h>
+#include<stdio.h>
+#include<conio.h>
+class student{
+public:
+    int roll;
+    
+    void getdata(){
+        cout<<"my roll no is :"<<roll;
+    }
+};
+
+void main(){
+    student s1;
+    s1.roll=9;
+    s1.getdata();
+}

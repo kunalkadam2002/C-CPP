@@ -1,0 +1,39 @@
+#include<iostream.h>
+#include<conio.h>
+#include<stdio.h>
+class employee{
+    public:
+    int empid;
+    int empsalary;
+    void getdata();
+    employee(){
+        cout<<"\ni m in 0 arguement constructor ";
+    }
+    
+    ~employee(){
+        cout<<"\ni m being destroyed";
+    }
+    
+    
+};
+
+void employee :: getdata(){
+    cout<<"\nemployee id is "<<this->empid<<"salary is "<<this->empsalary;
+}
+
+void main(){
+    employee s1;
+    s1.empid=2;
+    s1.empsalary=30000;
+    s1.getdata();
+    
+    // Dynamic construction
+    employee *eptr=new employee();
+    eptr->empid=4;
+    eptr->empsalary=31000;
+    eptr->getdata();
+    
+    delete(eptr);
+    
+    
+}

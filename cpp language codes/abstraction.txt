@@ -1,0 +1,38 @@
+#include<iostream.h>
+#include<conio.h>
+class animal{
+    public: 
+    virtual void eat()=0;                 //pure virtual function 
+};                                       //in this class function is not defined it is only declared              
+
+
+
+class dog: public animal{              
+    public:                               //concrete class 
+    void eat(){                          //derived class should inmplement function 
+        cout<<"\ndog eats pedigree ";
+    }
+};
+
+class cow : public animal{
+    public:                             //concrete class 
+    void eat(){
+        cout<<"\ncow eats grass";
+    }
+};
+
+class tiger : public animal{            //concrete class
+    public :
+    void eat(){
+        cout<<"\ntiger eats deer ";
+    }
+};
+
+void main(){
+    dog d1;
+    d1.eat();
+    cow c1;
+    c1.eat();
+    tiger t1;
+    t1.eat();
+}

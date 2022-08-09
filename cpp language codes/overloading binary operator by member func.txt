@@ -1,0 +1,39 @@
+//here we used only one parametre 
+
+
+
+#include<iostream.h>
+#include<conio.h>
+class complex{
+    int real;
+    int img;
+    
+    public:
+    complex(int real,int img){
+        this->real=real;
+        this->img=img;
+    }
+    void getdata(){
+        cout<<this->real<<" + "<<this->img<<"i\n";
+    }
+    complex(){};
+    complex operator +(complex &x);
+};
+
+complex complex :: operator +(complex &x){
+    complex temp;
+    temp.real=this->real+x.real;
+    temp.img=this->img+x.img;
+    return temp;
+}
+void main(){
+    complex c1(8,7);
+    c1.getdata();
+    
+    complex c2(4,8);
+    c2.getdata();
+    
+    complex c3;
+    c3=c1+c2;
+    c3.getdata();
+}

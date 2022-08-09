@@ -1,0 +1,39 @@
+#include<iostream.h>
+#include<conio.h>
+#include<stdio.h>
+class employee{
+    public:
+    int empid;
+    int empsalary;
+    void getdata();
+    employee(){
+        cout<<"\ni m in 0 arguement constructor ";
+    }
+    
+    employee(employee &e){
+        cout<<"\ni m in copy constructor ";
+        this->empid=e.empid;
+        this->empsalary=e.empsalary;
+    }
+    
+    
+};
+
+void employee :: getdata(){
+    cout<<"\nemployee id is "<<this->empid<<"employee slary is "<<empsalary;
+}
+
+void main(){
+    employee e1;
+    e1.empid=9;
+    e1.empsalary=30000;
+    e1.getdata();
+    
+    employee e2(e1);      // type 1 copy constructor 
+    e2.getdata();
+    
+    employee e3=e1;       // type 2 copy constructor 
+    e3.getdata();
+    
+    
+}

@@ -1,0 +1,32 @@
+//private members of base class are not 
+accesible derived class
+ 
+
+
+#include<iostream.h>
+#include<conio.h>
+class base{
+    int a;
+    
+    protected:
+    int b;
+    
+    public:
+    int c;
+    
+};
+
+class derived : public base{
+    public:
+    void showdata(){
+        cout<<a;
+        cout<<b;
+        cout<<c;
+        
+    }
+    
+};
+
+void main(){
+    
+}

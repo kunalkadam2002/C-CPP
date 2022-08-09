@@ -1,0 +1,24 @@
+#include<iostream.h>
+#include<conio.h>
+class base{
+    int a;
+    
+    protected:
+    int b;
+    
+    public:
+    int c;
+    
+};
+
+
+
+void main(){
+    base b1;
+    cout<<b1.a;   //private members of class are not accesible 
+    cout<<b1.b;  //protected members of class are not accesible
+    cout<<b1.c;  
+    
+    
+    
+}

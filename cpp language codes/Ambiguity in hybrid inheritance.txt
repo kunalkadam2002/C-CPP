@@ -1,0 +1,28 @@
+#include<iostream.h>
+#include<conio.h>
+class grandP{
+    public:
+    void showdata(){
+        cout<<"i m in grandparent display ";
+    }
+    
+};
+
+class P1:public grandP{
+    
+};
+
+class P2:public grandP{
+    
+};
+
+class child: public P1,public P2{
+    
+};
+
+void main(){
+    child c1;
+    c1.P1::showdata();
+    c1.P2::showdata();
+}
+

@@ -1,0 +1,37 @@
+#include<iostream.h>
+#include<conio.h>
+class myclass{
+    int x;
+    int y;
+    int z;
+    public :
+    void setdata(int a, int b,int c){
+        x=a;
+        y=b;
+        z=c;
+    }
+    
+    void getdata(){
+        cout<<"\na ="<<x<<"\tb="<<y<<"\tc ="<<z;
+        
+    }
+    friend void operator -(myclass &m)          // 1 parametre passed 
+    
+};
+void operator -(myclass &m){                  // 1 parametre passed 
+    m.x=-m.x;
+    m.y=-m.y;
+    m.z=-m.z;
+    
+}
+
+void main(){
+    myclass m1;
+    m1.setdata(5,6,7);
+    m1.getdata();
+    
+    -m1;
+    m1.getdata();
+    
+}
+

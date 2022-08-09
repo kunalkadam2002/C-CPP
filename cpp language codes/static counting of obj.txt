@@ -1,0 +1,32 @@
+#include<iostream.h>
+#include<conio.h>
+#include<stdio.h>
+class student{
+    public:
+    static int count;
+    student(){
+        count++;
+    }
+};
+
+int student :: count ;
+
+void main(){
+    cout<<"no of students :"<<student::count;
+    
+    student s1 ;
+    cout<<"\nno of students :"<<s1.count;
+    cout<<"\nno of students :"<<student::count;
+    
+    student s2;
+    cout<<"\nno of students :"<<s2.count;
+    cout<<"\nno of students :"<<s1.count;
+    cout<<"\nno of students :"<<student::count;
+    
+    student s3;
+    cout<<"\nno of students :"<<s3.count;
+    cout<<"\nno of students :"<<s1.count; 
+    cout<<"\nno of students :"<<s1.count;
+    cout<<"\nno of students :"<<student::count;
+}
+

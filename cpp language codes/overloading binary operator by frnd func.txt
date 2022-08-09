@@ -1,0 +1,42 @@
+// complex no addition
+
+#include<iostream.h>
+#include<conio.h>
+class complex{
+    int real;
+    int img;
+    
+    public:
+    complex(int real,int img){
+        this->real=real;
+        this->img=img;
+    }
+
+    complex(){};                            //--------called out for c3
+
+    void shownumber(){
+        cout<<this->real<<" + "<<this->img<<"i";
+    }
+    friend complex operator + (complex &x,complex &y);
+};
+
+complex operator + (complex &x,complex &y){
+    complex temp;
+    temp.real=x.real+y.real;
+    temp.img=x.img+y.img;
+    return temp;
+}
+
+void main(){
+    complex c1(4,5);
+    c1.shownumber();
+    
+    
+    complex c2(3,6);
+    c2.shownumber();
+    
+    complex c3;
+    c3=c1+c2;
+    cout<<"\naddition of complex no is ";
+    c3.shownumber();
+}

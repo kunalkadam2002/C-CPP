@@ -1,0 +1,23 @@
+#include<iostream.h>
+#include<conio.h>
+class student{
+    private:
+    int roll;
+    
+    
+    public:
+    void setroll(int roll){
+        this->roll=roll;
+        
+    }
+    
+    int getroll(){
+        return this->roll;
+    }
+};
+
+void main(){
+    student s1;
+    s1.setroll(7);
+    cout<<"roll no of student is :"<<s1.getroll();
+}

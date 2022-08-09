@@ -1,0 +1,37 @@
+#include<iostream.h>
+#include<conio.h>
+class kunal{
+    int a;
+    protected :
+    int b;
+    public :
+    int c;
+    
+    kunal(int x,int y ,int z){
+        a=x;
+        b=y;
+        c=z;
+    }
+    
+    
+    friend class yashraj;
+};
+class yashraj{
+    public: 
+    void showdata(kunal &p){
+        cout<<"\nprivate of kunal a is : "<<p.a;
+        cout<<"\nprivate of kunal b is :"<<p.b;
+    }
+};
+
+void main(){
+    kunal p1(5,6,7);
+    //cout<<"tell me about a :"<<p1.a;    error 
+   // cout<<"tell me about a :"<<p1.b;    error becoz private and protected members not accesible
+    cout<<"tell me about c :"<<p1.c;
+    
+    yashraj p2;
+    p2.showdata(p1);
+    
+    
+}

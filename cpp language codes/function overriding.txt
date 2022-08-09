@@ -1,0 +1,44 @@
+//  Dynamic polymorphism function overriding
+
+
+
+#include<iostream.h>
+#include<conio.h>
+class animal{
+    public :
+    virtual void eat(){
+        cout<<"\nanimal must eat ";
+    }
+};
+
+class dog: public animal{
+    public :
+    void eat(){
+        cout<<"\ndog eats pedigree ";
+    }
+};
+
+void main(){
+    animal a1;
+    dog d1;
+    animal *aptr;
+    dog *dptr;
+    
+    
+    //case 1: 
+    aptr=&a1;
+    aptr->eat();
+    
+    //case 2: 
+    dptr=&d1;
+    dptr->eat();
+    
+    
+    //case 3 :
+    aptr=&d1;                  //by default we get base class or generalised entity
+    aptr->eat();               //but if we use virtual keyword we get specialised entity
+    
+    /*case 4 :                
+    dptr=&a1;                        error 
+    dptr->eat();  */
+}

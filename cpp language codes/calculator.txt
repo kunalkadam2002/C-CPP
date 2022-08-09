@@ -1,0 +1,30 @@
+#include<iostream.h>
+#include<conio.h>
+
+void main(){
+    int no1,no2;
+    cout<<"enter  no 1 :";
+    cin>>no1;
+    
+    cout<<"\nenter no2 :";
+    cin>>no2;
+    
+    int add;
+    add=no1+no2;
+    cout<<"\nresult is :"<<add;
+    
+    int sub;
+    sub=no1-no2;
+    cout<<"\nsubstraction is :"<<sub;
+    
+    int mul;
+    mul=no1*no2;
+    cout<<"\nmultiplication is :"<<mul;
+    
+    int divi;
+    divi=no1/no2;
+    cout<<"\ndivision is :"<<divi;
+    
+    
+    
+}

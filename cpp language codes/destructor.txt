@@ -1,0 +1,34 @@
+#include<iostream.h>
+#include<stdio.h>
+#include<conio.h>
+class student{
+    public:
+    int roll;
+    int marks;
+    student(){
+        cout<<"\ni m in 0 argument constructor";
+        
+    }
+    
+    student(int roll){
+        cout<<"\ni m in 1 arguement constructor";
+        this->roll=roll;
+        
+    }
+    
+    ~student(){
+        cout<<"\ni m being destroyed ";
+    }
+    
+    void getdata(){
+        cout<<"\nroll no is :"<<this->roll<<"\nmarks are :"<<this->marks;
+    }
+
+};
+
+void main(){
+    student s1;
+    student s2(11);
+    student s3,s4,s5;
+    
+}

@@ -1,0 +1,31 @@
+#include<iostream.h>
+#include<conio.h>
+class myclass{
+    int a;
+    int b;
+    int c;
+    
+    public :
+    myclass(int x,int y,int z){
+        this->a=x;
+        this->b=y;
+        this->c=z;
+    }
+    friend void showprivatedata(myclass &p);
+};
+
+void showprivatedata(myclass &p){
+    cout<<"wow i can access private members ";
+    cout<<"private data of myclass is "<<p.a;
+    cout<<"private data of myclass is "<<p.b;
+    cout<<"private data of myclass is "<<p.c;
+};
+
+
+
+
+void main(){
+    myclass p1(5,6,7);
+    showprivatedata(p1);
+    
+}

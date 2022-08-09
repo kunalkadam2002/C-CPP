@@ -1,0 +1,27 @@
+#include<iostream.h>
+#include<conio.h>
+class P1{
+    public:
+    void showdata(){
+        cout<<"I m in p1 ";
+    }
+    
+};
+
+class P2{
+    public:
+    void showdata(){
+        cout<<"I m in P2 ";
+    }
+    
+};
+
+class child : public P1,public P2{
+    
+};
+
+void main(){
+    child c1;
+    c1.P1::showdata();
+    c1.P2::showdata();
+}
