@@ -1,0 +1,29 @@
+#include<stdio.h>
+#include<conio.h>
+void main(){
+    int i;
+    char name1[4][8]={
+        "kunal",
+        "avantika",
+        "avadhut",
+        "swapnil"
+    };
+    
+    char *name2[4]={
+        "kunal",
+        "avantika",
+        "avadhut",
+        "swapnil"
+        
+    };
+    printf("\nsize of name 1 : %ld",sizeof(name1));
+    for(i=0;i<4;i++){
+        printf("\n%s",name1[i]);
+    }
+    
+    printf("\nsize of name 2 : %ld",sizeof(*name2));
+    for(i=0;i<4;i++){
+        printf("\n%s",name2[i]);
+    }
+    
+}

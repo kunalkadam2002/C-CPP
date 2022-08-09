@@ -1,0 +1,19 @@
+#include<stdio.h>
+#include<conio.h>
+union students{
+    int roll;
+    char gender;
+    float per;
+};
+void main(){
+    union students s1;
+    s1.roll=8;
+    s1.gender='m';
+    s1.per=98.40;
+    printf("roll is : %d",s1.roll);
+    printf("\ngender is : %c",s1.gender);
+    printf("\npercentage  is : %f",s1.per);
+    
+    
+    
+}

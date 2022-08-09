@@ -1,0 +1,11 @@
+#include<stdio.h>
+#include<conio.h>
+void main(){
+    int a;
+    for(a=1;a<8;a++){
+        printf("%d",a);
+        
+    }
+}
+  
+ output : 1 2 3 4 5 6 7 

@@ -1,0 +1,44 @@
+#include<stdio.h>
+#include<conio.h>
+void main(){
+    int a=4,b=6,m=2,n=10;
+    int *aptr,*bptr,*mptr,*nptr;
+    int i;
+    int *myarray[4];
+    
+    
+    aptr=&a;
+    bptr=&b;
+    mptr=&m;
+    nptr=&n;
+    
+    myarray[0]=aptr;
+    myarray[1]=bptr;
+    myarray[2]=mptr;
+    myarray[3]=nptr;
+    
+    for(i=0;i<4;i++){
+        printf("\n%d",*myarray[i]);
+    }
+    
+    
+}
+
+
+
+#more about pointers :
+
+
+#include<stdio.h>
+#include<conio.h>
+void main(){
+    int myarray[]={11,22,33,44};
+    int *ptr;
+    ptr=myarray;
+    int i;
+    
+    for(i=0;i<4;i++){
+        printf("%d",*ptr);
+        ptr++;
+    }
+}

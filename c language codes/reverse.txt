@@ -1,0 +1,17 @@
+#include<stdio.h>
+#include<conio.h>
+void main(){
+    int num;
+    int quo,rem;
+    printf("enter number:");
+    scanf("%d",&num);
+    printf("the reverse of no is :");
+
+    while(num!=0){
+        quo=num/10;
+        rem=num%10;
+        printf("%d",rem);
+        num=quo;
+    }
+    
+}

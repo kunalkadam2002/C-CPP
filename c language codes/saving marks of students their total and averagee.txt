@@ -1,0 +1,45 @@
+#include<stdio.h>
+#include<conio.h>
+void main(){
+    int marks[3][4];
+    int r,c;
+    int total;
+    printf("enter marks of students :\n");
+    for(r=0;r<3;r++){
+        printf("students %d marks\n ",(r+1));
+        for(c=0;c<4;c++){
+            printf("subject %d marks :",(c+1));
+            scanf("%d",&marks[r][c]);
+        }
+    }
+    printf("total is :\n");
+    
+    for(r=0;r<3;r++){
+        total=0;
+        for(c=0;c<4;c++){
+            total=total+marks[r][c];
+            
+        }
+        printf("\n%d",total);
+        
+    }
+    printf("average is :\n");
+    for(c=0;c<4;c++){
+        printf("\nsubject %d :",c+1);
+        total=0;
+        for(r=0;r<3;r++){
+            total=total+marks[r][c];
+            
+        }
+        printf(" %d ",(total/3));
+        
+        
+        
+    }
+    
+
+    
+   
+    
+    
+}

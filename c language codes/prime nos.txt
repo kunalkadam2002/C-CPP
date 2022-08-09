@@ -1,0 +1,36 @@
+#include<stdio.h>
+#include<conio.h>
+
+
+void main(){
+ int num=3;
+ int flag;
+ int i;
+
+ clrscr();
+ printf("\nPrime Numbers from 1 to 100 are : \n");
+ printf("2");
+
+ while(num<=100){
+
+		for(i=2;i<num;i++){
+
+			if(num%i==0){
+				flag=0;
+				break;
+			}else{
+				flag=1;
+				continue;
+			}
+		}
+
+		if(flag==1){
+			printf(" %d",num);
+		}
+
+	num++;
+ }
+
+
+ getch();
+}

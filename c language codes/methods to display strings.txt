@@ -1,0 +1,61 @@
+#include<stdio.h>
+#include<conio.h>
+#include<string.h>
+
+void main(){
+    char str[]="kunal";
+    int len;
+    int i;
+    char *cptr;
+    
+    /* by using %s : */
+    printf("enter string :");
+    scanf("%s",str);
+    printf("%s",str);
+    
+    
+    
+    
+    
+    /* by using gets : */
+    printf("\neneter  string :");
+    gets(str);
+    printf("%s",str);
+    
+    
+    
+    
+    /*by using length : */
+    printf(" string is :");
+    len=strlen(str);
+    i=0;
+    while(len>0){
+        printf("%c",str[i]);
+        i++;
+        len--;
+    }
+    
+    
+    
+    /* by using null character  : */
+    printf("string is :");
+    i=0;
+    while(str[i]!='\0'){
+        printf("%c",str[i]);
+        i++;
+    }
+    
+    
+    
+    /*by using null pointer  : */
+    printf("string is : ");
+    cptr=str;
+    while(*cptr!='\0'){
+        printf("%c",*cptr);
+        cptr++;
+    }
+    
+    
+    
+    
+}

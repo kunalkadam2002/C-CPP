@@ -1,0 +1,79 @@
+by using while loop :
+
+
+
+#include<stdio.h>
+#include<conio.h>
+void main(){
+    int num;
+    int fact=1;
+    printf("enter no :");
+    scanf("%d",&num);
+    
+    while(num>0){
+        fact=fact*num;
+        num--;
+        
+    }
+    printf("%d",fact);
+}
+
+by using function :
+
+
+#include<stdio.h>
+#include<conio.h>
+int factorial(int n);
+void main(){
+    int num ;
+    int b;
+    
+    printf("enter number :");
+    scanf("%d",&num);
+    b=factorial(num);
+    printf("%d",b);
+    
+}
+
+int factorial(int n){
+    int f=1;
+    while(n>0){
+        f=f*n;
+        n--;
+       
+        
+        
+    }
+    
+}
+
+without using function recursion :
+
+
+#include<stdio.h>
+#include<conio.h>
+int factorial(int n);
+void main(){
+    int num ;
+    int b;
+    
+    printf("enter number :");
+    scanf("%d",&num);
+    b=factorial(num);
+    printf("%d",b);
+    
+}
+
+int factorial(int n){
+    int f=1;
+    if(n==1)
+    return 1;
+    else
+    f=n*factorial(n-1);
+    return f;
+        
+        
+    }
+    
+
+

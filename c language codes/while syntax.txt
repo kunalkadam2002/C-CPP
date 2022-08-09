@@ -1,0 +1,9 @@
+#include<stdio.h>
+#include<conio.h>
+void main(){
+    int a=1;
+    while(a<8){
+        printf("%d",a);
+        a++;
+    }
+}

@@ -1,0 +1,25 @@
+#include<iostream.h>
+#include<stdio.h>
+#include<conio.h>
+class student{
+    public:
+    int roll;
+    int marks;
+    void getroll(){
+        cout<<"my roll no is :"<<roll;
+    }
+    void getmarks();
+};
+
+void student:: getmarks(){
+    cout<<"my marks are :"<<marks;
+}
+
+void main(){
+    student s1;
+    s1.roll=9;
+    s1.getroll();
+    
+    s1.marks=98;
+    s1.getmarks();
+}

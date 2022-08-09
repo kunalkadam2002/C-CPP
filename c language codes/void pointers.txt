@@ -1,0 +1,38 @@
+#include<stdio.h>
+#include<conio.h>
+
+
+void main(){
+ int a=18456;
+ void *vptr;
+ float f = 13.45;
+ char ch = 'A';
+
+ 
+
+ vptr = &a;
+
+ printf("\n%d",a);
+ printf("\n%d",*&a);
+
+ printf("\n%d",*(int *)vptr);
+
+ vptr = &f;
+ printf("\n%f",*(float *)vptr);
+
+ vptr = &ch;
+ printf("\n%c",*(char *)vptr);
+
+
+
+
+
+
+
+
+}
+
+
+
+
+

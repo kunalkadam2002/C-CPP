@@ -1,0 +1,22 @@
+#include<stdio.h>
+#include<conio.h>
+void swap(int *x,int *y);
+void main(){
+    int a=4;
+    int b=6;
+    printf("values before swapping :%d , %d",a,b);
+    swap(&a,&b);
+    printf("\nvalues after swapping :%d , %d ",a,b);
+    
+    
+}
+void swap(int *x,int *y){
+    int temp;
+    temp=*x;
+    *x=*y;
+    *y=temp;
+    printf("\nvalues while swaping : %d , %d ", *x, *y);
+    
+}
+
+#changes are done in formal as well as actual parametres

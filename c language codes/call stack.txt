@@ -1,0 +1,34 @@
+#include<stdio.h>
+#include<conio.h>
+
+void fun1();
+void fun2();
+void fun3();
+
+
+void main(){
+ clrscr();
+ printf("\nStart of Main");
+ fun1();
+ printf("\nEnd of Main");
+ getch();
+}
+
+void fun1(){
+ printf("\nStart of Fun1");
+ fun2();
+ printf("\nEnd of Fun1");
+}
+
+void fun2(){
+ printf("\nStart of Fun2");
+ fun3();
+ printf("\nEnd of Fun2");
+}
+
+void fun3(){
+ printf("\nStart of Fun3");
+ printf("\nEnd of Fun3");
+
+}
+

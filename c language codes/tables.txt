@@ -1,0 +1,11 @@
+#include<stdio.h>
+#include<conio.h>
+void main(){
+    int num,a;
+    printf("enter a num:",num);
+    scanf("%d",&num);
+    
+    for(a=1;a<10;a++){
+        printf("%d*%d =%d",num,a,num*a);
+    }
+}

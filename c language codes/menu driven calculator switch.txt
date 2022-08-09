@@ -1,0 +1,94 @@
+#include<stdio.h>
+#include<conio.h>
+
+int add(int x,int y);
+int sub(int x,int y);
+int mul(int x,int y);
+int div(int x,int y);
+
+void main(){
+ int choice;
+ int no1,no2,result;
+ int ch;
+
+
+do{
+ clrscr();
+ printf("\nMENU\n1.Add\n2.Sub\n3.Mul\n4.Div\n5.Exit");
+ printf("\n\nEnter Your Choice :");
+ scanf("%d",&choice);
+
+ switch(choice){
+	case 1:
+						printf("\nEnter Number1 :");
+						scanf("%d",&no1);
+						printf("\nEnter Number2 :");
+						scanf("%d",&no2);
+						result = add(no1,no2);
+						printf("\nResult is : %d",result);
+						break;
+	case 2:
+						printf("\nEnter Number1 :");
+						scanf("%d",&no1);
+						printf("\nEnter Number2 :");
+						scanf("%d",&no2);
+						result = sub(no1,no2);
+						printf("\nResult is : %d",result);
+						break;
+	case 3:
+						printf("\nEnter Number1 :");
+						scanf("%d",&no1);
+						printf("\nEnter Number2 :");
+						scanf("%d",&no2);
+						result = mul(no1,no2);
+						printf("\nResult is : %d",result);
+						break;
+	case 4:
+						printf("\nEnter Number1 :");
+						scanf("%d",&no1);
+						printf("\nEnter Number2 :");
+						scanf("%d",&no2);
+						result = div(no1,no2);
+						printf("\nResult is : %d",result);
+						break;
+	case 5:
+						goto exit;
+
+	default:
+					printf("\nDear Pl Enter Valid Choice");
+ }
+
+
+ 
+
+}
+
+exit:
+
+ getch();
+}
+
+int add(int x,int y){
+ int z;
+ z=x+y;
+ return z;
+}
+int sub(int x,int y){
+ int z;
+ z=x-y;
+ return z;
+}
+int mul(int x,int y){
+ int z;
+ z=x*y;
+ return z;
+}
+int div(int x,int y){
+ int z;
+ z=x/y;
+ return z;
+}
+
+
+
+

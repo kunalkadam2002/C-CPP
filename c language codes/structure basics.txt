@@ -1,0 +1,41 @@
+#include<stdio.h>
+#include<conio.h>
+struct students{
+    int roll;
+    char gender;
+    float per;
+    
+    
+}s2={6,'f',96.48};
+
+
+void main(){
+    struct students s1;
+    struct students *sptr;
+    
+    s1.roll=4;
+    s1.gender='m';
+    s1.per=98.40;
+    
+    printf("size of s1 is %d",sizeof(s1));
+    printf("size of s2 is %d",sizeof(s2));
+    
+    printf("student database  is :\n");
+    printf("\n%d",s1.roll);
+    printf("\n%c",s1.gender);
+    printf("\n%f",s1.per);
+    
+    sptr=&s1;
+    printf("\nstudent database  is :\n");
+    printf("\n%d",sptr->roll);
+    printf("\n%c",sptr->gender);
+    printf("\n%f",sptr->per);
+    
+    sptr=&s2;
+    printf("\n%d",sptr->roll);
+    printf("\n%c",sptr->gender);
+    printf("\n%f",sptr->per);
+    
+    
+    
+}

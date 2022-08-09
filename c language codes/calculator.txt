@@ -1,0 +1,20 @@
+#include<stdio.h>
+#include<conio.h>
+int main(){
+    int a,b,sum,mul,div,mod;
+    printf("enter first no :");
+    scanf("%d",&a);
+    
+    printf("enter second no:");
+    scanf("%d",&b);
+    
+    sum=a+b;
+    mul=a*b;
+    div=a/b;
+    mod=a%b;
+
+    printf("\nadiition of 2 nos is : %d",sum);
+    printf("\nbmultiplication of 2 nos is : %d",mul);
+    printf("\ndivision of 2 nos is : %d",div);
+    printf("\nmodule of 2 nos is : %d",mod);
+}

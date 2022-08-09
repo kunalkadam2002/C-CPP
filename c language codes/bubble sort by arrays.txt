@@ -1,0 +1,59 @@
+#include<stdio.h>
+#include<conio.h>
+void main(){
+    int n;
+    int i;
+    int j;
+    int k;
+    int temp;
+    int myarray[25];
+    
+    
+    printf("enter how many elements you want :");
+    scanf("%d",&n);
+    for(i=0;i<n;i++){
+        printf("enter elememts of array :");
+        scanf(" %d",&myarray[i]);
+    }
+    printf("Array before sorting :");
+    for(i=0;i<n;i++){
+        printf("  %d",myarray[i]);
+    }
+    
+    /*sorting ascending array:*/
+    for(i=0;i<n-1;i++){
+        for(j=0;j<n-1;j++){
+            if(myarray[j]>myarray[j+1]){
+                temp=myarray[j];
+                myarray[j]=myarray[j+1];
+                myarray[j+1]=temp;
+            }
+        }
+        
+        
+            
+        }
+        printf("\narray after sorting : ");
+        for(i=0;i<n;i++){
+            printf("  %d",myarray[i]);
+        }
+        
+        
+        /*sorting descending array : */
+        for(i=0;i<n-1;i++){
+            for(j=0;j<n-1;j++){
+                if(myarray[j]<myarray[j+1]){
+                    temp=myarray[j];
+                    myarray[j]=myarray[j+1];
+                    myarray[j+1]=temp;
+                }
+            }
+        }
+        
+        printf("\narray after sorting desecnding array : " );
+        for(i=0;i<n;i++){
+            printf(" %d",myarray[i]);
+        }
+        
+    }
+    
